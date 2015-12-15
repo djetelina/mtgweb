@@ -1,0 +1,201 @@
+html, body{
+	padding: 0;
+	margin: 0;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+body {
+    background: black url(../obr/bg.png) no-repeat fixed top center;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Oswald', sans-serif;
+	color: green;
+	display: inline-block;
+	border-bottom: 2px solid orange;
+	margin: 0;
+}
+
+h3, h4 {
+	border:none;
+}
+
+.indented {
+    padding-left: 20px;
+}
+
+a {
+	color: green;
+    text-decoration: none;
+}
+
+a:hover {
+    color: orange;
+}
+
+p, ol {
+	font-size: 13px;
+	text-align: justify;
+}
+
+.example:before {
+    content: "Příklad: \a";
+    font-size: 20px;
+    font-style: normal;
+    color: orange;
+    white-space: pre;
+}
+
+.example {
+    margin: 0 20px;
+    padding: 8px;
+    font-style: italic;
+    border-left: 8px solid green;
+    background-color: #555;
+}
+
+.floatbox {
+	float: right;
+	width: 25%;
+	height: auto;
+	margin: 10px 0 10px 10px;
+	min-width: 100px;
+	border: 3px groove green;
+}
+
+.floatbox img {
+	width: 100%;
+	height: auto;
+}
+
+.floatbox p {
+	text-align: center;
+	font-style: italic;
+	font-size: 14px;
+	margin: 0;
+}
+
+.floatbox ol {
+    list-style-type: upper-roman;
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+}
+
+.floatbox ol a:hover {
+	color: orange;
+}
+
+.floatbox a {
+	text-decoration: none;
+	display: block;
+	color: inherit;
+}
+
+#page{
+	margin: 0 auto;
+	max-width: 1000px;
+	height: 100%;
+	background: #333;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 3px solid green;
+}
+
+#header{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	height: auto;
+	padding: 10px;
+	text-align: center;
+}
+
+#titulek{
+	font-family: 'Oswald', sans-serif;
+	color: green;
+	max-width: 100%;
+	padding: 0;
+	margin: 10px;
+	font-size: 50px;
+	text-shadow:	3px 0 8px white,
+					0 3px 8px orange;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: none;
+}
+#menu_zone{
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+	width: 100%;
+}
+
+#menu_zone ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+#menu_zone ul li {
+    background: #555; 
+	display: inline-block;
+	text-align: center;
+	min-width: 140px;
+	border: 3px solid green;
+}
+#menu_zone ul li:hover {
+	background: #555;
+}
+#menu_zone ul li a {
+	color:white;
+	display: block;
+	padding: 5px 0;
+	font-size: 20px;
+	text-transform: uppercase;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+#menu_zone ul li a:hover {
+	color: orange;
+	background: #666;
+}
+
+@keyframes dropdown {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+#menu_zone ul li:hover ul {
+	animation: dropdown 0.8s;
+	display: block;
+	box-shadow: 3px 3px green, -3px 3px green;
+}
+#menu_zone ul li ul {
+    position: absolute;
+    min-width: inherit;
+    display: none;
+}
+#menu_zone ul li ul li { 
+    display: block;
+    padding: 0;
+    border: none;
+}
+
+#content{
+	margin-top: 30px;
+	color: white;
+    padding-bottom: 10px;
+}
+
+#footer{
+	clear:both;
+	border-top: 2px solid green;
+	color: green;
+	font-size: smaller;
+	padding: 3px 10px;
+}
+#footer table {
+    margin: 0 auto;
+}
+#footer td{
+    padding:0 10px;
+}
